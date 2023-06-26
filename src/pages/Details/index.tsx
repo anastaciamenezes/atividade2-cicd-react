@@ -27,7 +27,7 @@ const Details = () => {
       </DetailsTitle>
 
       {player.last_name.length > 0 && (
-        <DetailsPanel data-cy="last-name-panel">
+        <DetailsPanel data-cy="player-panel">
           <DetailsPanelTitle>National Basketball Association - NBA</DetailsPanelTitle>
           <DetailsList data-cy="details-list">
             <p>
