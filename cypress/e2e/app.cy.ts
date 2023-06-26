@@ -10,7 +10,4 @@ describe('Balldontlie E2E tests', () => {
       body: this.apiResponse,
     })
   })  
-
-    it.only('should show correct meanings about a player', () => {
-    })
-  })
+})
