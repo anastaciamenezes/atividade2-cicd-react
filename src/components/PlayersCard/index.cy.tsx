@@ -5,7 +5,7 @@ import { Player } from "../../models/Player";
 
 describe("<PlayersCard />", () => {
   it("should render players info correctly", () => {
-    cy.fixture("players").then((playerJson: Player) => {
+    cy.fixture("player").then((playerJson) => {
       const players: Player = playerJson as Player;
       const order = 1;
 

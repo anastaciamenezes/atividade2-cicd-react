@@ -3,8 +3,8 @@ import { defineConfig } from 'cypress'
 export default defineConfig({
   component: {
     devServer: {
-      framework: 'create-react-app',
-      bundler: 'webpack',
+      framework: 'react',
+      bundler: 'vite',
     },
   },
 
@@ -13,6 +13,6 @@ export default defineConfig({
   },
 
   env: {
-    API_URL: 'https://www.balldontlie.io/api/v1/players?-',
+    API_URL: 'https://www.balldontlie.io/api/v1/players?search=',
   },
 })

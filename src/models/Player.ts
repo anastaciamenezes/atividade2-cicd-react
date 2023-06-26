@@ -1,4 +1,5 @@
 export interface Player {
+  players: any
   first_name: string
   last_name: string
   position: string
@@ -16,7 +17,8 @@ export const getPlayers = (jsonObj: any): Player[]  => {
       first_name,
       last_name,
       position,
-      team_name: team.full_name
+      team_name: team.full_name,
+      players: undefined
     }  
 
     players.push(player)

@@ -27,19 +27,16 @@ export const DetailsPanelTitle = styled.h2`
 
 export const DetailsList = styled.ul`
   list-style-type: square;
-`
-
-export const DetailsMetadata = styled.li`
   font-family: 'italic';
   font-size: 20px;
 `
 
-export const AudioPlayer = styled.audio`
-  display: block;
-  width: 500px;
-  margin: 10px auto;
+/**
+ * export const DetailsMetadata = styled.li`
+  font-family: 'bold';
+  font-size: 100px;
 `
-
+*/
 export const BackButton = styled.button`
   width: 200px;
   background-color: #392e4a;

@@ -14,9 +14,11 @@ type Props = {
 const PlayersCard = ({ order, player }: Props) => {
   return (
     <PlayersCardPanel data-cy="">
-      <PlayersTitle data-cy="">{`${order} - ${player.first_name}`}</PlayersTitle>
+      <PlayersTitle data-cy="">{`${order} - ${player.first_name} ${player.last_name}`}</PlayersTitle>
       <PlayersDetailsLink to="/details" state={{ player }}>
-        <PlayersDetailsText data-cy="">{player.first_name}</PlayersDetailsText>
+        <PlayersDetailsText data-cy="">
+          {player.first_name} {player.last_name}
+        </PlayersDetailsText>
       </PlayersDetailsLink>
     </PlayersCardPanel>
   );
